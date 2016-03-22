@@ -1,0 +1,75 @@
+<html lang = "en" ng-app="forc">
+<head>
+    <title>Jogo da Forca</title>
+  <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Jogo da Forca</title>
+
+	<link href="css/bootstrap.min.css" rel="stylesheet"></link>
+</head>
+<body>
+
+			<center><h1>JOGO DA FORCA</h1></center>
+		<center>Criado por Thiago Ribeiro Silva ADS 2016 -1</center>
+
+      
+    <div class = "container" ng-controller = "forca">
+			
+			<center>{{conectar()}}...</center>
+			<center><img src = "{{homemforca()}}" style ="height: 250px"></img></center>
+		<center>
+        <br/> 
+		
+				
+				<p>{{tracos()}}</p>
+				 
+				 </br>
+				 <h4><b>Dica: {{dica()}}.</h4></b>
+				 <br/>
+				 <h4><b>Erros : {{qtderro()}} </h4></b>
+				 <br/>
+                <input type="button" value="Q" id="Q" ng-click = "letra('Q');"> 
+                <input type="button" value="W" id="W" ng-click = "letra('W');">
+                <input type="button" value="E" id="E" ng-click = "letra('E')">
+                <input type="button" value="R" id="R" ng-click = "letra('R')">
+                <input type="button" value="T" id="T" ng-click = "letra('T')">
+                <input type="button" value="Y" id="Y" ng-click = "letra('Y')">
+                <input type="button" value="U" id="U" ng-click = "letra('U')">
+                <input type="button" value="I" id="I" ng-click = "letra('I')">
+                <input type="button" value="O" id="O" ng-click = "letra('O')">
+				<input type="button" value="P" id="P" ng-click = "letra('P')">
+
+        <br/>
+                <input type="button" value="A" id="A" ng-click = "letra('A')">
+                <input type="button" value="S" id="S" ng-click = "letra('S')">
+                <input type="button" value="D" id="D" ng-click = "letra('D')">
+                <input type="button" value="F" id="F" ng-click = "letra('F')">
+                <input type="button" value="G" id="G" ng-click = "letra('G')">
+                <input type="button" value="H" id="H" ng-click = "letra('H')">
+                <input type="button" value="J" id="J" ng-click = "letra('J')">
+                <input type="button" value="K" id="K" ng-click = "letra('K')">
+                <input type="button" value="L" id="L" ng-click = "letra('L')">
+
+        </br>
+                <input type="button" value="Z" id="Z" ng-click = "letra('Z')">
+                <input type="button" value="X" id="X" ng-click = "letra('X')">
+                <input type="button" value="C" id="C" ng-click = "letra('C')">
+                <input type="button" value="V" id="V" ng-click = "letra('V')">
+                <input type="button" value="B" id="B" ng-click = "letra('B')">
+                <input type="button" value="N" id="N" ng-click = "letra('N')">
+                <input type="button" value="M" id="M" ng-click = "letra('M')">
+		</br>
+		<input type="button" value="Proxima" id="prox" ng-click = "proximo()" >
+        <br/>
+	</center>
+	</div>
+	
+    <script src="jquery/jquery-1.12.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<script src="angular/angular.min.js"></script>
+	<script src="jogoforca.js" charset="utf-8"></script>
+
+</body>
+</html>
